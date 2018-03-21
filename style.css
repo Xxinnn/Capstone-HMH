@@ -1,0 +1,14 @@
+html {
+    font-size: 16pt;
+}
+
+.navbar-default {
+    background-color: #fcf;
+}
+
+.navbar-default .navbar-brand {
+    color: #F0C93F;
+}
+section {
+    position: relative;
+}
