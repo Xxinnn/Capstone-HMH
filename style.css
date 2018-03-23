@@ -1,6 +1,19 @@
-html {
-    font-size: 20px;
+h5 {
+    font-weight: 700;
 }
+h6{
+    font-weight: 600;
+}
+p {
+    font-size: 16px;
+}
+body {
+    font-size: 16px;
+}
+/*keep the image from being too large*/
+.img-cont img { width: 100%;}
+.img-cont { width: 100%; margin-top: 10px; margin-bottom: 5px; position: relative;}
+@media only screen and (min-width: 992px) { .img-cont { margin: 0;} }
 
 .navbar-default {
     background-color: #fcf;
@@ -14,20 +27,36 @@ body {
   padding-top: 60px;
 }
 @media (max-width: 979px) {
-  body {
+body {
     padding-top: 60px;
   }
 }
 
-section {
-    position: relative;
-    margin-left: 8%;
-    margin-right: 8%; 
+
+
+
+/************************************************/
+/* TEAM */
+/************************************************/
+#team .row {
+    margin-top: 20px;
 }
 
-img {
-    display: block;
-    width: 50%;
+.about-card { 
+    clear: both;
+    margin-bottom: 20px;
+}
+@media only screen and (min-width: 500px) { .card-image { float: left; margin-bottom: 10px; } }
+
+#team .img-cont {
+    width: 150px;
+    margin-right: 15px;
+    margin-left: 15px;
+    
+/*
     margin-left: auto;
     margin-right: auto;
+*/
 }
+
+
