@@ -1,3 +1,14 @@
+/*style of new elements*/
+
+/*
+beige: #F9E1AD;
+orange: #EEA46E;
+blue: #9FBED4;
+purple: #B997BE;
+yellow: #F5ECB0;
+*/
+
+
 h5 {
     font-weight: 700;
 }
@@ -12,16 +23,12 @@ body {
 }
 /*keep the image from being too large*/
 .img-cont img { width: 100%;}
+.img-cont.phone { max-width: 400px;} /* Prevent phone containers being too big though*/
 .img-cont { width: 100%; margin-top: 10px; margin-bottom: 5px; position: relative;}
+
 @media only screen and (min-width: 992px) { .img-cont { margin: 0;} }
 
-.navbar-default {
-    background-color: #fcf;
-}
 
-.navbar-default .navbar-brand {
-    color: #F0C93F;
-}
 
 body {
   padding-top: 60px;
