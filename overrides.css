@@ -10,11 +10,11 @@
 }
 
 .navbar-default ul.nav li a:hover {
-    color: #e8bcd2;
+    color: #9FBED4;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus {
-    color: #dc5db5;
+    color: #2D8BCD;
     background: none;
 }
 /* Remove button like hamburger menu on nav */
