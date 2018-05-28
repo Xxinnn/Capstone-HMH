@@ -14,8 +14,7 @@
         <link rel="stylesheet" type="text/css" href="css/agency.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         
-        <link href="family=https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
 <!--        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>-->
 
@@ -32,17 +31,21 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand page-scroll" href="#top">EvolvEd</a>
+                    <a class="navbar-brand page-scroll" href="#top">
+                        <img  class="logoPic" src="img/Logo.png" style="width: 90px;">
+                    </a>
                 </div>
                 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                    <ul class="nav navbar-nav navbar-right">
                        <li class="hidden"><a href="#page-top"></a></li>
                        <li><a class="page-scroll" href="#overview">Overview</a></li>
+                       
+                       <li><a class="page-scroll" href="#spring">Research</a></li>
+<!--                       <li><a class="page-scroll" href="#summer">Summer</a></li>-->
+<!--                       <li><a class="page-scroll" href="#prototype">Prototype</a></li>-->
+                       <li><a class="page-scroll" href="#insights">Insights</a></li>
                        <li><a class="page-scroll" href="#team">Team</a></li>
-                       <li><a class="page-scroll" href="#spring">Spring</a></li>
-                       <li><a class="page-scroll" href="#summer">Summer</a></li>
-                       <li><a class="page-scroll" href="#prototype">Prototype</a></li>
                        <li><a class="page-scroll" href="#contact">Contact</a></li>
                    </ul>
                 </div>
@@ -51,9 +54,16 @@
         
 <!--==============================================================-->
 <!-- Header -->
-<!--==============================================================-->   
-        <div></div>
-       
+<!--==============================================================-->     
+        
+          <div class="bg" style="background-image: url(img/teamPhotoLayer.png)">
+             <div class="row">
+              <div class="col-md-12">
+                  <h1>Improving reading interventions through learning science</h1>
+              </div>
+              </div>
+          </div>
+           
 
 <!--==============================================================-->
 <!-- OVERVIEW -->
@@ -61,13 +71,13 @@
         <section id="overview">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-12">
+                    <div class="col-md-12">
                         <h2 class="section-heading">Overview</h2>
+                    </div>
+                       <div class="col-md-8">
                         <div style="margin-top: 40px">
                             <h3 class="section-heading">About the project</h3>
-                            <p>The capstone project for the Master's Educational Technology and Applied Learning Science program at Carnegie Mellon University is an eight month long project which dive into real-world problems and find design solutions for their client.
-                            <br/><br/>
-                            In our project, five master students team up and work closely with Houghton Mifflin Harcourt on the development of next iteration of System 44. </p>
+                            <p>Team EvolvEd is working on a capstone project and is comprised of five students in the Masters of Educational Technology and Applied Learning Sciences (METALS) program at Carnegie Mellon University. Together with Houghton Mifflin Harcourt, a leading producer of educational content and technology, EvolvEd is working to inform features for the next iteration of System 44, one of their reading intervention software programs. The areas of focus for this project are: student motivation, student accountability and personalization of the student experience through the software.</p>
                         </div>
                         
                         <div style="margin-top: 40px">
@@ -81,6 +91,13 @@
                         </div>
                         
                     </div>
+                    
+                    <div class="col-md-4">
+                        <div style="margin-top: 80px; margin-left: 40px;">
+                       
+                        <img src="img/hunt.png" style="width: 300px;">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -89,105 +106,262 @@
 <!-- spring -->
 <!--==============================================================--> 
 
+        <section id="spring">
+            <div class="container" id="research-sections">
+              <div>
+                 <h2 class="section-heading">Research</h2>
+              </div>
+               
+               <div class="row">
+                    <div class="col-sm-12 col-md-8">
+                        <ul class="timeline">
+                                <li>
+                                <div class="timeline-image">
+                                    <img class="img-circle img-responsive" src="img/dashboard.png" alt="">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>Heuristic Analysis</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p>Systematic evaluation of the user interface</p>
+                                        <p>Considering that “surprise happens to the prepared mind,” we conducted a heuristic analysis to evaluate the current setup of System 44 in terms of user experience and eLearning design principles.</p>
+                                    </div>
+                                </div>
+                            </li>
+                                <li>
+                                <div class="timeline-image">
+                                    <img class="img-circle img-responsive" src="img/adaptivity-grid.jpg" alt="">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>Adaptivity Analysis</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p>A systematic evaluation of how System 44 personalizes the student experience at different levels.</p>
+                                        <p>This evaluation helps us reveal potential areas where System 44 could improve its personalization techniques.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="timeline-image">
+                                    <img class="img-circle img-responsive" src="img/CI.jpg" alt="">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>Contexual Inquiry</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p>Observing and questioning users while they work in their own environments. </p>
+                                        <p>This interview technique explores the motivations and thought processes of students as they use System 44.</p>
+                                    </div>
+                                </div>
+                            </li>
 
+                            <li>
+                                <div class="timeline-image">
+                                    <img class="img-circle img-responsive" src="img/LearningCurve.png" alt="">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>Log Data Analysis</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p>Detecting useful patterns in student performance on instructional activities</p>
+                                        <p>Analyzing the students’ interactions with the software gives us empirical evidence about the types of activities they struggle with the most (or find too easy) and in what contexts.</p>
+                                    </div>
+                                </div>
+                            </li>
 
+                            <li>
+                                <div class="timeline-image">
+                                    <img class="img-circle img-responsive" src="img/CA_1.png" alt="">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>Competitive Analysis</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p>Our competitive analysis is a review of six other competitors from language learning, reading and teaching phonics. We went through these software to see how other products handle the challenges that System 44 faces.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+            
+            <div class="hidden-xs hidden-sm container diamonds" id="diamonds-1">
+                <div class="diamond-cont">
+                    <div class="diamond focus">
+                        <span class="diamond-time">Spring</span>
+                        <span class="diamond-label">Research</span>
+                        <div class="diamond-fillcont">
+                            <div class="diamond-fill"></div>
+                        </div>
+                    </div>
+                    <div class="diamond">
+                        <span class="diamond-time">Summer</span>
+                        <span class="diamond-label">Design</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+        </section>
+        
+<!--==============================================================-->
+<!-- insights -->
+<!--==============================================================-->
+
+        <section id="insights">
+            <div class="container" id="insights-section">
+               <div>
+                 <h2 class="section-heading">Insights</h2>
+               </div>
+               <div class="insight">
+                   <p class="insightP">1. System 44’s method of adapting instruction may not respond appropriately when a task is clearly too difficult for a student. As a result, students may lose confidence in their ability to complete certain activities.</p>
+               </div>
+               <div class="insight">
+                   <p class="insightP">2. Even if feedback in the form of direct instruction is well-aligned to a student’s errors, it is less effective if it’s repeated several times after the same mistakes and detrimental to engagement.</p>
+               </div>
+               <div class="insight">
+                   <p class="insightP">3. Even if a student has learned certain word strategies and can apply them in isolation, he or she might not be able to use the strategy in the context of a sentence/paragraph.</p>
+               </div>
+               <div class="insight">
+                   <p class="insightP">4. While students value being able to track their progress and see evidence of their own learning, they feel as if the System 44 progress gauges and results screens in the software are irrelevant or boring.</p>
+               </div>
+                <div class="insight">
+                    <p class="insightP">5. Some of the feedback in the System 44 tutor is too generic to be helpful for students.</p>
+                
+                </div>
+                <div class="insight">
+                    <p class="insightP">6. Some students see the System 44 activities as not meaningful.</p>
+                </div>
+                <div class="insight">
+                    <p class="insightP">7. Teachers tend to make their own adaptations to System 44 instead of searching through the overwhelming amount of resources provided to them.</p>
+                </div>
+                <div class="insight">
+                    <p class="insightP">8. Teachers tend to have good intuitions about the root cause of their students’ issues, but have no way to directly manipulate their students’ experience in the System 44 software.</p>
+                </div>
+            </div>
+        </section>
+        
+<!--==============================================================-->
+<!-- insights -->
+<!--==============================================================-->
+
+        <section id="summer">
+            <div class="container" id="design-sections">
+            </div>
+            <div class="hidden-xs hidden-sm container diamonds" id="diamonds-2">
+            </div>
+            
+        </section>
 <!--==============================================================-->
 <!-- team -->
 <!--==============================================================-->     
         <section id="team">
            <div class="container">
-               <div class="row">
-                  <div class="col-sm-12 col-md-8">
+                  <div>
                     <h2 class="section-heading">
                         Meet the Team
                     </h2>
                   </div>
-                  <div class="col-sm-12 col-md-6">
+                  <div class="row">
+                  <div class="col-sm-12 col-md-4">
                      <div class="about-card">
-                         <div class="card-image">
+                         <div class="card-image-1">
+                             
                              <div class="img-cont"><img src="img/Zach.png"></div>
-                             <h5><center>Zach Mineroff</center></h5>
+                             <h5><center>Zachary Mineroff</center></h5>
                              <h6><center>Coordinator</center></h6>
+                             
                          </div>
+                         
+<!--
                          <p class="card-bio">
                              I am excited to gain perspective on how an educational intervention is integrated into an actual school’s ecosystem.
                          </p>
-                         <div class="card-meta">
-                             <a href="">Email:</a><br/>
-                             <a href="">Website:</a>
-                         </div>
+-->
+
                      </div>
-                     <div class="about-card">
-                         <div class="card-image">
-                             <div class="img-cont"><img src="img/Julia.png"></div>
-                             <h5><center>Julia</center></h5>
-                             <h6><center>Content & Creative Director</center></h6>
-                         </div>
-                         <p class="card-bio">
-                             I hope to better understand how technology could be used to inform the application of learning science in a real-world educational setting.
-                         </p>
-                         <div class="card-meta">
-                             <a href="">Email:</a><br/>
-                             <a href="">Website:</a>
-                         </div>
-                     </div>
-                     <div class="about-card">
-                         <div class="card-image">
-                             <div class="img-cont"><img src="img/Chenxin.png"></div>
-                             <h5><center>Chenxin Wang</center></h5>
-                             <h6><center>Developer</center></h6>
-                         </div>
-                         <p class="card-bio">
-                             I’m interested in exploring innovative design ideas that respond to learners’ needs and transforming them into real product through technology.
-                         </p>
-                         <div class="card-meta">
-                             <a href="">chenxinw@andrew.cmu.edu</a><br/>
-                             <a href="">Website:</a>
-                         </div>
-                     </div>   
-                  </div>
-                  
-                  <div class="col-sm-12 col-md-6">
-                     <div class="about-card">
+                   </div>
+                    <div class="col-sm-12 col-md-4">
+                        <div class="about-card">
                          <div class="card-image">
                              <div class="img-cont"><img src="img/Rog.png"></div>
-                             <h5><center>Roger</center></h5>
+                             <h5><center>Roger Strang</center></h5>
                              <h6><center>Researcher</center></h6>
                          </div>
+<!--
                          <p class="card-bio">
                              I am interested in understanding stakeholders’ perspectives, and using qualitative and quantitative data to create prototypes.
                          </p>
-                         <div class="card-meta">
-                             <a href="">Email:</a><br/>
-                             <a href="">Website:</a>
-                         </div>
+-->
+
                      </div>
+                   </div>
+                   </div>
+                    
+               <div class="row">
+                  <div class="col-sm-12 col-md-4">
+                   <div class="about-card">
+                         <div class="card-image">
+                             <div class="img-cont"><img src="img/Julia.png"></div>
+                             <h5><center>Julia Ridley</center></h5>
+                             <h6><center>Content & Creative Director</center></h6>
+                         </div>
+<!--
+                         <p class="card-bio">
+                             I hope to better understand how technology could be used to inform the application of learning science in a real-world educational setting.
+                         </p>
+                         
+-->
+                     </div>
+                   </div>
+                   
+                   <div class="col-sm-12 col-md-4">
                      <div class="about-card">
                          <div class="card-image">
                              <div class="img-cont"><img src="img/Lucy.png"></div>
                              <h5><center>Lu Yang</center></h5>
                              <h6><center>Designer</center></h6>
                          </div>
+<!--
                          <p class="card-bio">
                              I’m interested in orchestrating learning experiences using human-centered design thinking and rapid iterative design processes.
                          </p>
-                         <div class="card-meta">
-                             <a href="">Email:</a><br/>
-                             <a href="">Website:</a>
-                         </div>
+                         
+-->
                      </div>
                    </div>
-                </div>
-           </div>
+                   
+                   <div class="col-sm-12 col-md-4">
+                       <div class="about-card">
+                         <div class="card-image">
+                             <div class="img-cont"><img src="img/Chenxin.png"></div>
+                             <h5><center>Chenxin Wang</center></h5>
+                             <h6><center>Developer</center></h6>
+                         </div>
+<!--
+                         <p class="card-bio">
+                             I’m interested in exploring innovative design ideas that respond to learners’ needs and transforming them into real product through technology.
+                         </p>
+                         
+-->
+                     </div> 
+                   </div>  
+               </div>
+
+                     
+                  </div>
         </section>
         
-        <section id="spring">
-            
-        </section>
         
-        <section id="summer"></section>
         
-        <section id="prototype"></section>
+<!--        <section id="summer"></section>-->
+        
+<!--        <section id="prototype"></section>-->
         
 <!--==============================================================-->
 <!-- contact -->
@@ -217,7 +391,7 @@
     </body>
     
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="js/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
@@ -230,8 +404,5 @@
     
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
-
-<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
-
 
 </html>

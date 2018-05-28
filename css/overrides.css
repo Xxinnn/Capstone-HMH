@@ -35,3 +35,20 @@ body {
     font-size: 134x;
     font-family: "semplicitapro",Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+
+/* Fix for padding for left aligning the timeline circles */
+@media only screen and (min-width: 768px) { .timeline>li .timeline-panel { padding-left: 120px; } }
+@media only screen and  (min-width: 992px) { .timeline>li .timeline-panel {padding-left: 190px; } }
+
+/* Fix for line between circles for left align */
+.timeline:before { left: 40px; }
+@media only screen and (min-width: 768px) { .timeline:before { left:50px; } }
+@media only screen and (min-width: 992px) { .timeline:before { left: 65px; } }
+
+/* Fix of space between timeline elements */
+@media only screen and (min-width: 768px) { .timeline>li { margin-bottom: 60px;} }
+@media only screen and (min-width: 992px) { .timeline>li { margin-bottom: 30px;} }
+@media only screen and (min-width: 1200px) { .timeline>li { margin-bottom: 20px;} }
+
+/* Fix of size of timeline circles for large screens */
+@media only screen and (min-width: 992px) { .timeline>li .timeline-image { width:130px; height:130px; } }

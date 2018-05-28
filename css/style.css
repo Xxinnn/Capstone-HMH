@@ -2,13 +2,40 @@
 
 /*
 beige: #F9E1AD;
-orange: #EEA46E;
-blue: #9FBED4;
-purple: #B997BE;
-yellow: #F5ECB0;
+
+primary color--
+blue: #57A4D2;
+purple: #AF7FAE;
+orange: #F2853F;
+
+secondary color--
+orange: #F0A46E;
+blue: #587FB9;
+purple: #9682B8;
+yellow: #FFE270;
 */
+body {
+    overflow-x:hidden;
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial, sans-serif;
+/*    font-family:"Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif*/
+}
 
+h1,h2,h3,h4,h5,h6
+{
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial, sans-serif;
+/*    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
+    /*font-weight:700*/
+}
 
+h1 {
+    color: white;
+    font-weight: 500;
+    font-size: 3em;
+    padding: 15%;
+}
+h4 {
+    color: #587FB9;
+}
 h5 {
     font-weight: 700;
 }
@@ -28,6 +55,29 @@ body {
 
 @media only screen and (min-width: 992px) { .img-cont { margin: 0;} }
 
+section{
+    padding:50px 0
+}
+section h2.section-heading
+{
+    color: #587FB9;
+    font-size:40px;
+    margin-top:0;
+    margin-bottom:30px;
+    font-weight: 500
+}
+
+section h3.section-subheading
+{
+    font-size:16px;
+    text-transform:none;
+    font-style:italic;
+    font-weight:400;
+    margin-bottom:75px
+}
+footer {
+    font-size: 16px;
+}
 
 
 body {
@@ -40,7 +90,144 @@ body {
 }
 
 
+/*
+#intro{
+    margin-top: 50px;
+    background:url('img/Girl-Reading.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+*/
 
+/*
+.intro {
+    background: url('img/TeamPhoto.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
+*/
+
+
+body, html {
+    height: 100%;
+}
+.bg { 
+    /* The image used */
+    background-image: url(img/TeamPhoto.jpg);
+
+    /* Half height */
+    height: 80%; 
+
+    /* Center and scale the image nicely */
+/*    background-position: center;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/************************************************/
+/* Research */
+/************************************************/
+#spring { background-color: #fbfbfb;}
+#team { background-color: #fbfbfb;}
+
+.timeline { z-index: 100; }
+.timeline>li .timeline-image:hover { border: 3px solid #e6c1f5;}
+
+/* Fixing space between research intro and its subsections */
+
+@media only screen and (min-width: 768px) { #research-sections { margin-bottom: 100px; } }
+
+/* Double diamond code - need to clean it lol */
+.diamond {
+    width: 200px;
+    height: 200px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+    border-radius: 10px;
+    border: 2px solid #c1c9d0;
+    margin-left: 60px;
+    margin-top: 73px;
+    position: relative;
+}
+.diamond.focus {
+    border: 2px solid #252b31;
+    z-index: 5;
+}
+.diamonds { position: absolute; }
+.diamond-cont {
+    position:absolute;
+    right:50px;
+}
+@media only screen and (min-width: 1200px) { .diamond-cont { margin-bottom: 30px; } }
+.diamonds.stick-top {
+    position: fixed;
+    top: 100px; /* Addresses nav */
+}
+.stick-bottom { bottom: 0; }
+.diamond span.diamond-label {
+    position: absolute;
+    -ms-transform: rotate(-45deg); /* IE 9 */
+    -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+    transform: rotate(-45deg);
+    margin-top: 90px;
+    margin-left: 60px;
+    color: #c1c9d0;
+    z-index: 5;
+}
+.diamond.focus span.diamond-label {
+    color: #252b31;
+}
+.diamond-time {
+    color: #c1c9d0;
+    position: absolute;
+    width:60%;
+    text-align: right;
+    -ms-transform: rotate(-45deg); /* IE 9 */
+    -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+    transform: rotate(-45deg);
+    top: -58px;
+    left: -23px;
+    border-bottom: 1px dashed #c1c9d0;
+}
+.diamond.focus .diamond-time {
+    color: #9682B8;
+    border-bottom: 1px dashed #b0428e;
+}
+.diamond-fillcont {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 7px;
+    z-index: 3;
+    position: relative;
+}
+.diamond-fill {
+    width: 763px;
+    height: 0px;
+    background: #e8edf1;
+    /*height: 284px;*/
+    position: absolute;
+    left: -200px;
+    top: -180px;
+    transform: rotate(-45deg);
+    z-index: 1;
+}
+
+/************************************************/
+/* INSIGHTS */
+/************************************************/
+.insight {
+    height: 80px;
+}
+.insightP {
+    border-left: 5px solid #FFE270;
+    padding: 0 8px;
+
+}
 
 /************************************************/
 /* TEAM */
@@ -53,17 +240,28 @@ body {
     clear: both;
     margin-bottom: 20px;
 }
-@media only screen and (min-width: 500px) { .card-image { float: left; margin-bottom: 10px; } }
+/*
+.card-image-1 {
+    margin-left: 30%;
+}
+*/
+@media only screen and (min-width: 500px) { 
+    .card-image { float: left; margin-bottom: 10px; } 
+    .card-image-1 { float: left; margin-bottom: 10px; margin-left: 0%;} 
+
+}
+
+@media only screen and (max-width: 500px) { 
+    .card-image { float: left; margin-bottom: 10px; } 
+    .card-image-1 { float: left; margin-bottom: 10px; margin-left: 0%;} 
+
+}
+
 
 #team .img-cont {
     width: 150px;
     margin-right: 15px;
     margin-left: 15px;
-    
-/*
-    margin-left: auto;
-    margin-right: auto;
-*/
 }
 
 
