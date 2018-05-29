@@ -2,10 +2,10 @@
 .navbar-default .navbar-nav>.active>a{ background: none; }
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
     background:none;
-    color: #fff;
+/*    color: #fff;*/
 }
 .navbar-default .navbar-nav>.active>a:hover {
-    color: #ff61da;
+/*    color: #ff61da;*/
     background: none;
 }
 
